@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	
+	<LinearLayout
+		 android:orientation="horizontal"
+   		 android:layout_width="fill_parent"
+    	android:layout_height="200px"
+    	
+	>
+		<Button
+			android:id="@+id/order_amusement"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/order_amusement"
+		>
+		</Button>
+		
+		<Button
+			android:id="@+id/order_service"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/order_service"
+		    >
+		</Button>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+	 android:orientation="vertical"
+    android:layout_width="230px"
+    android:layout_height="500px"
+    >	
+    	<Button
+    		android:id="@+id/order_addGreens"
+		    android:layout_width="110px"
+		    android:layout_height="90px"
+		    android:text="@string/order_addGreens"
+		    android:layout_marginTop="10px"
+		    
+		    >
+		</Button>
+    	<Button
+    		android:id="@+id/order_verify"
+		   android:layout_width="110px"
+		    android:layout_height="100px"
+		    android:layout_marginTop="10px"
+		    android:text="@string/order_verify"
+		    >
+		</Button>
+    	<Button
+    		android:id="@+id/order_settle"
+		     android:layout_width="110px"
+		    android:layout_height="100px"
+		    android:layout_marginTop="10px"
+		    android:text="@string/order_settle"
+		    >
+		</Button>
+    	<Button
+    		android:id="@+id/order_back"
+		     android:layout_width="110px"
+		    android:layout_height="100px"
+		    android:layout_marginTop="10px" 
+		    android:text="@string/order_back"
+		    >
+		</Button>
+    
+    </LinearLayout>
+</LinearLayout>

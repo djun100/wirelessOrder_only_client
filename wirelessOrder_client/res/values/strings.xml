@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, LoginActivity!</string>
+    <string name="app_name">WirelessOrder</string>
+    
+    <!-- menu -->
+    <string name="menu_name">红烧鱼头</string>
+    <string name="menu_category">类别：热菜</string>
+    <string name="menu_style">菜系：川菜</string>
+    <string name="menu_price">价格：96 元</string>
+    <string name="menu_discount_price">价格：66 元</string>
+    <string name="menu_add">+</string>
+    <string name="menu_subtract">-</string>
+    <string name="menu_count">2</string>
+    <string name="menu_add_order">加入订单</string>
+    <string name="menu_introduce">菜谱介绍</string>
+    <string name="menu_details">材料：\n
+1、大鱼头1只，蒜2头，生姜1大块，京葱（或青蒜）1根\n
+2、料酒1大匙，白胡椒粉1小匙，盐1小匙\n
+3、盐1/2小匙，白胡椒粉1/2小匙，生抽1大匙，老抽1小匙，白糖1/2小匙，料酒1小匙。\n
+4、水淀粉2大匙。\n
+做法：\n
+1、将大鱼头清洗干净，切成块，以长型块为佳，在切好的鱼头里放入材料（2），拌匀材料，静置20分钟。\n
+2、 把生姜切成片，把蒜去皮，剥成蒜粒，京葱切成段。\n
+3、把做法（1）中的鱼头空干水分（我又冲洗了一遍），在盘子里加入面粉，把鱼头两面均匀的沾裹上面粉，拍去多余面粉。放入加入油烧热的平底锅中，两面煎成金黄色。\n
+4、锅中加入少许油，小火，加入生姜片、蒜粒，小火炒出香味，加入葱段，炒到葱变软，加入煎好的鱼头，加入材料（3），翻炒，把鱼头一块块的取出，剩下葱姜蒜。\n
+5、 把大砂锅放在炉上小火烧热，底部铺入2/3炒过的葱姜蒜，加入鱼头，在鱼头上加入剩下1/3的葱姜蒜（饭店里是把所有的都铺在底部，俺怕自己做的味道不够，就采用了上盖下铺的方法），转大火，淋入水淀粉，水开后，转小火，加上盖子，5分8分的就好了，吃的时候，整锅端上。\n
+	</string>
+    
+    
+    <!-- main -->
+    <string name="main_elect">推荐</string>
+    <string name="main_style">菜系</string>
+    <string name="main_group">套菜</string>
+    <string name="main_game">娱乐</string>
+    <string name="main_service">服务</string>
+    <string name="main_ivLeft_button">←</string>
+    <string name="main_ivRigth_button">→</string>
+    <string name="main_hot">热菜</string>
+    <string name="main_cold">凉菜</string>
+    <string name="main_wine">酒水</string>
+    <string name="main_drink">饮品</string>
+    <string name="main_ivLeft_menu">←</string>
+    <string name="main_ivRight_menu">→</string>
+    <string name="main_order_information">订单信息</string>
+    <string name="main_order_totle">订单总金额为：\n\t456元</string>
+    <string name="main_order_button">下单</string>
+    
+    
+    <!-- main_nine_item -->
+    <string name="main_nine_itemName">沙拉鱼</string>
+    <string name="main_nine_itemPrice">价格：66元</string>
+    <string name="main_nine_itemCount">当前的菜谱已点1份</string>
+    <string name="main_nine_itemButton">加入订单</string>
+    
+    
+    <!-- main_plan_order -->
+    <string name="main_plan_order_itemTitle">菜谱类别</string>
+    <string name="main_plan_order_itemText">菜谱名称　数量　单价　小计　操作</string>
+    
+    <string name="BASE_URL">http://192.168.1.112/wirelessOrder/api/</string>
+    <!-- login -->
+    <string name="login">登录</string>
+    <string name="login_username">用户名</string>
+    <string name="login_password">密    码</string>
+    <string name="login_ok">登录成功</string>
+    <string name="login_error">登录失败</string>
+    <string name="empty_username">用户名不能为空</string>
+    <string name="empty_password">密码不能为空</string>
+    
+    <!-- index -->
+    <string name="index_information">酒店信息*************************************</string>
+    <string name="index_openin">进入</string>
+    <string name="index_button">使用帮助</string>
+    <string name="index_poster">广告信息</string>
+    
+    <!-- kitchen -->
+    <string name="kitchen_content_left_button">已下单列表</string>
+    <string name="kitchen_content_right_button">制作中</string>
+    <string name="kitchen_top_left_textView">xxx后厨管理系统</string>
+    <string name="kitchen_left_text">编号   名称  数量  下单时间     桌号   备注  操作</string>
+    <string name="kitchen_right_text">编号   名称  数量  下单时间     桌号   备注  操作</string>
+    <string name="kitchen_select">请选择</string>
+	
+	<!-- order -->   
+    <string name="order_amusement">娱乐</string>
+    <string name="order_service">服务</string>
+    <string name="order_addGreens">加菜</string>
+    <string name="order_verify">确认下单</string>
+    <string name="order_settle">结账</string>
+    <string name="order_back">返回</string>
+    <string name="order_left_top_text">菜谱名称     数量     单价    当前状态    操作</string>
+</resources>

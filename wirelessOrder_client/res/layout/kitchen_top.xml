@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/kitchen_top_linear"
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30px"
+	    android:layout_marginTop="15px"
+	 >
+	    <TextView
+	    	android:id="@+id/kitchen_top_left_textView"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/kitchen_top_left_textView"
+			android:layout_weight="1"
+			android:layout_marginLeft="15px"
+	    />
+	    <TextView
+	    	android:id="@+id/kitchen_top_right_textView"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	android:text="it is time"
+	    	
+	    	android:gravity="right"
+			android:layout_weight="1"
+			android:layout_marginRight="15px"
+	    />
+	</LinearLayout>

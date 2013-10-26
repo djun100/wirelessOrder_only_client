@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    >
+    
+    <!-- order界面   left部分 -->
+	<LinearLayout
+		 android:layout_width="800px"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    >
+    	<include layout="@layout/order_left"></include>
+    	<LinearLayout
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    	>
+    	<TextView
+    		android:id="@+id/order_sum"
+    		android:layout_marginTop="10px"
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+		/> 
+		</LinearLayout>   		
+    </LinearLayout>
+    
+    <!-- order界面 右侧部分 -->
+    <LinearLayout
+		 android:layout_width="200px"
+    	android:layout_height="fill_parent"
+    >
+    		<include layout="@layout/order_right"></include>
+    
+    </LinearLayout>
+</LinearLayout>

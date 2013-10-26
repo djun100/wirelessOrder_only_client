@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/index_information"
+		android:gravity="center_horizontal"
+		android:layout_marginTop="25px"
+	/>
+	<FrameLayout  
+		android:id="@+id/index_frame"
+		android:layout_width="300px"
+		android:layout_height="200px"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="250px"
+	>
+		<ImageView
+			android:id="@+id/index_frame_image"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+			android:background="@drawable/title_bg"
+			android:visibility="gone"
+			
+		/>
+		<TextView
+			android:id="@+id/index_openin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/index_openin"
+			android:paddingTop="50px"
+			android:paddingLeft="130px"
+			android:gravity="center_vertical"
+		/>
+	</FrameLayout>
+	
+	
+	<Button
+		android:id="@+id/index_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:text="@string/index_button"
+		android:layout_marginTop="30px"
+	/>
+	<TextView
+		android:id="@+id/index_poster" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="@string/index_poster"
+		android:layout_marginTop="30px"
+	/>
+</LinearLayout>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="15dp"
+    >
+    <!-- main左侧 -->
+    <LinearLayout
+    	android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="3"
+	    android:layout_marginLeft="25dp"
+	    android:layout_marginTop="25dp"
+	    android:layout_marginRight="10dp"
+    	>
+    	<!-- 酒店Logo -->
+    	<ImageView
+	    	android:layout_width="fill_parent"
+		   	android:layout_height="fill_parent"
+		   	android:layout_weight="3"
+		   	android:background="@drawable/logo"
+		   	/>
+		<!-- 预购订单信息 -->
+		<LinearLayout
+			android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    >
+		    <!-- 订单信息头 -->
+		    <TextView
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	android:gravity="center_horizontal"
+		    	android:text="@string/main_order_information"
+		    	android:layout_marginTop="10dp"
+		    	/>
+		    <!-- 上箭头 -->
+		    <ImageView
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="10dp"
+				android:layout_gravity="center_horizontal"		    	
+		    	android:src="@drawable/top"
+		    	/>
+		    <!-- 详细订单信息 -->
+		    <ListView
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="fill_parent"
+		    	android:id="@+id/main_lvOrder_information"
+		    	android:layout_weight="1"
+		    	/>
+		    <!-- 下箭头 -->
+		    <ImageView
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="10dp"
+				android:layout_gravity="center_horizontal"		    	
+		    	android:src="@drawable/bottom"
+		    	/>
+		    <RelativeLayout
+		    	android:layout_width="fill_parent"
+		    	android:layout_height="wrap_content"
+		    	>
+		    	<!-- 显示总额 -->
+			    <TextView
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:id="@+id/main_order_totle"
+			    	android:textSize="16sp"
+			    	android:text="@string/main_order_totle"
+			    	/>
+			    <!-- 下单 -->
+			    <Button
+			    	android:layout_width="140dp"
+			    	android:layout_height="70dp"
+			    	android:layout_alignParentRight="true"
+			    	android:id="@+id/main_order_button"
+			    	android:text="@string/main_order_button"
+			    	android:textSize="20sp"
+			    	/>
+			  </RelativeLayout>  	
+		</LinearLayout>	
+    </LinearLayout>
+    <!-- main右侧 -->
+    <LinearLayout
+    	android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:layout_marginTop="25dp"
+	    android:layout_marginRight="10dp"
+    	>
+    	<!-- 功能按钮 -->
+    	<LinearLayout
+    		android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="10dp"
+		    android:layout_marginRight="10dp"
+		    >
+		    <!-- 推荐 -->
+		    <Button
+		    	android:layout_width="80dp"
+		   		android:layout_height="80dp"
+		   		android:id="@+id/main_elect"
+		   		android:text="@string/main_elect"
+		   		android:textSize="20sp"
+		   		/>
+		   	<!-- 菜系 -->
+		    <Button
+		    	android:layout_width="80dp"
+		   		android:layout_height="80dp"
+		   		android:id="@+id/main_style"
+		   		android:text="@string/main_style"
+		   		android:textSize="20sp"
+		   		/>
+		   	<!-- 左箭头 -->
+		    <ImageView
+		    	android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:id="@+id/main_ivLeft_button"
+		   		android:layout_gravity="center_vertical"
+		   		android:src="@drawable/left"
+		   		/>
+		   	<!-- 滑动按钮组 -->
+		   	<HorizontalScrollView
+		   		android:layout_width="wrap_content"
+		   		android:layout_height="wrap_content"
+		   		android:layout_weight="1"
+		   		>
+		   		<LinearLayout
+		   			android:layout_width="wrap_content"
+		   			android:layout_height="wrap_content"
+		   			android:id="@+id/main_ll_button"
+		   			>
+		   		<!-- 热菜 -->
+		   		<Button
+		   			android:layout_width="80dp"
+		   			android:layout_height="80dp"
+			   		android:id="@+id/main_hot"
+		   			android:text="@string/main_hot"
+		   			android:textSize="20sp"
+		   			/>
+		   		<!-- 凉菜 -->
+		   		<Button
+		   			android:layout_width="80dp"
+		   			android:layout_height="80dp"
+			   		android:id="@+id/main_cold"
+		   			android:text="@string/main_cold"
+		   			android:textSize="20sp"
+		   			/>
+		   		<!-- 酒水 -->
+		   		<Button
+		   			android:layout_width="80dp"
+		   			android:layout_height="80dp"
+			   		android:id="@+id/main_wine"
+		   			android:text="@string/main_wine"
+		   			android:textSize="20sp"
+		   			/>
+		   		<!-- 饮品 -->
+		   		<Button
+			   		android:layout_width="80dp"
+			   		android:layout_height="80dp"
+			   		android:id="@+id/main_drink"
+		   			android:text="@string/main_drink"
+		   			android:textSize="20sp"
+		   			/>
+		   		<!-- test -->
+		   		<Button
+		   			android:layout_width="80dp"
+		   			android:layout_height="80dp"
+		   			android:text="test"
+		   			android:textSize="20sp"
+		   			/>
+		   		<!-- test -->
+		   		<Button
+		   			android:layout_width="80dp"
+		   			android:layout_height="80dp"
+		   			android:text="test"
+		   			android:textSize="20sp"
+		   			/>
+		   		<!-- test -->
+		   		<Button
+		   			android:layout_width="80dp"
+		   			android:layout_height="80dp"
+		   			android:text="test"
+		   			android:textSize="20sp"
+		   			/>
+		   		<!-- test -->
+		   		<Button
+		   			android:layout_width="80dp"
+		   			android:layout_height="80dp"
+		   			android:text="test"
+		   			android:textSize="20sp"
+		   			/>
+		   		</LinearLayout>
+		   	</HorizontalScrollView>
+		   	<!-- 右箭头 -->
+		   	<ImageView
+		    	android:layout_width="wrap_content"
+		   		android:layout_height="fill_parent"
+		   		android:id="@+id/main_ivRigth_button"
+		   		android:src="@drawable/right"
+		   		android:layout_gravity="center_vertical"
+		   		/>
+		   	<!-- 套菜 -->
+		    <Button
+		    	android:layout_width="80dp"
+		   		android:layout_height="80dp"
+		   		android:id="@+id/main_group"
+		   		android:text="@string/main_group"
+		   		android:textSize="20sp"
+		   		/>
+		   	<!-- 娱乐 -->
+		    <Button
+		    	android:layout_width="80dp"
+		   		android:layout_height="80dp"
+		   		android:id="@+id/main_game"
+		   		android:text="@string/main_game"
+		   		android:textSize="20sp"
+		   		/>
+		   	<!-- 服务 -->
+		    <Button
+		    	android:layout_width="80dp"
+		   		android:layout_height="80dp"
+		   		android:id="@+id/main_service"
+		   		android:text="@string/main_service"
+		   		android:textSize="20sp"
+		   		/>
+		</LinearLayout>
+		<!-- 可选菜谱 -->
+		<LinearLayout
+			android:orientation="horizontal"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    >
+		    <!-- 左箭头 -->
+		    <ImageView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="fill_parent"
+		    	android:gravity="center_vertical"
+		    	android:id="@+id/main_ivLeft_menu"
+		    	android:src="@drawable/left"
+		   		/>
+		   	<!-- 菜谱显示 -->
+		    <GridView 
+			    android:horizontalSpacing="10dp" 
+			    android:id="@+id/main_gridview" 
+			    android:layout_width="fill_parent" 
+			    android:layout_height="fill_parent" 
+			    android:gravity="center" 
+			    android:numColumns="3" 
+			    android:columnWidth="150dp" 
+			    android:verticalSpacing="10dp" 
+			    android:stretchMode="columnWidth"
+			    android:layout_weight="1"
+			    />
+			<!-- 右箭头 -->
+		    <ImageView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="fill_parent"
+		    	android:gravity="center_vertical"
+		    	android:id="@+id/main_ivRight_menu"
+				android:src="@drawable/right"
+		   		/>
+		</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

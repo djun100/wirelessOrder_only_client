@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+	android:layout_marginBottom="25dp"
+	
+    >
+	<LinearLayout
+		android:layout_height="fill_parent" 
+	    android:layout_width="fill_parent" 
+	    android:orientation="horizontal"
+	    android:layout_weight="2"
+	    android:layout_marginBottom="25dp"
+	    >
+	    <!-- 菜谱图片 -->
+	    <ImageView
+		    android:layout_width="fill_parent"
+			android:layout_height="fill_parent" 
+		    android:layout_weight="1"
+		    android:background="@drawable/tortoise"
+		    android:id="@+id/menu_imageView" 
+		    android:layout_marginLeft="25dp"
+			android:layout_marginTop="20dp"
+	    	/>
+	    <!-- 菜谱相关信息 -->
+	    <LinearLayout
+			android:layout_height="fill_parent" 
+		    android:layout_width="fill_parent"
+		    android:orientation="vertical"
+		    android:layout_weight="2"
+	    	>
+	    	<TableLayout
+	    		android:layout_height="fill_parent" 
+			    android:layout_width="fill_parent"
+			    android:layout_weight="1"
+			    >
+		    	<!-- 菜谱名称 -->
+		    	<TextView
+					android:layout_height="wrap_content" 
+				    android:layout_width="wrap_content"
+				    android:layout_marginTop="15dp"
+				    android:gravity="center_horizontal"
+		    		android:text="@string/menu_name"
+		    		android:id="@+id/menu_name"
+		    		/>
+		    	<TableRow>
+			    	<!-- 菜谱类别 -->
+			    	<TextView
+						android:layout_height="wrap_content" 
+					    android:layout_width="wrap_content"
+					    android:layout_marginTop="10dp"
+					    android:gravity="center_horizontal"
+			    		android:text="@string/menu_category"
+			    		android:layout_weight="1"
+			    		/>
+			    	<!-- 菜谱菜系 -->
+			    	<TextView
+						android:layout_height="wrap_content" 
+					    android:layout_width="wrap_content"
+					    android:gravity="center_horizontal"
+					    android:layout_marginTop="10dp"
+			    		android:text="@string/menu_style"
+			    		android:layout_weight="1"
+			    		/>
+		    	</TableRow>
+		    	<TableRow>
+			    	<!-- 菜谱价格 -->
+			    	<TextView
+						android:layout_height="wrap_content" 
+					    android:layout_width="wrap_content"
+					    android:gravity="center_horizontal"
+					    android:layout_marginTop="10dp"
+			    		android:text="@string/menu_price"
+			    		android:layout_weight="1"
+			    		/>
+			    	<!-- 菜谱优惠价格 -->
+			    	<TextView
+						android:layout_height="wrap_content" 
+					    android:layout_width="wrap_content"
+					    android:gravity="center_horizontal"
+					    android:layout_marginTop="10dp"
+			    		android:text="@string/menu_discount_price"
+			    		android:layout_weight="1"
+			    		/>
+		    	</TableRow>
+	    	</TableLayout>	
+	    	<RelativeLayout
+	    		android:layout_height="fill_parent" 
+			    android:layout_width="fill_parent"
+			    android:layout_marginTop="15dp"
+			    android:layout_weight="1"
+			   	>	
+	    		<!-- 显示菜谱数量 -->
+		    	<EditText
+					android:layout_height="35dp" 
+				    android:layout_width="50dp"
+				    android:layout_alignParentTop="true"
+				    android:layout_centerHorizontal="true"
+				    android:gravity="center_horizontal"
+				    android:focusable="false"
+				    android:focusableInTouchMode="false"
+		    		android:text="@string/menu_count"
+		    		android:textSize="12sp"
+		    		android:id="@+id/menu_count"
+		    		/>
+		    	<!-- 菜谱数量减少 -->
+		    	<Button
+					android:layout_height="35dp" 
+				    android:layout_width="50dp"
+				    android:layout_alignParentTop="true"
+				    android:layout_toLeftOf="@id/menu_count"
+		    		android:text="@string/menu_subtract"
+		    		android:id="@+id/menu_subtract"
+		    		/>
+		    	<!-- 菜谱数量增加 -->
+		    	<Button
+					android:layout_height="35dp" 
+				    android:layout_width="50dp"
+				    android:layout_alignParentTop="true"
+				    android:layout_toRightOf="@id/menu_count"
+		    		android:text="@string/menu_add"
+		    		android:id="@+id/menu_add"
+		    		/>
+			    <!-- 加入订单 -->
+			    <Button
+			    	android:layout_height="30dp" 
+				    android:layout_width="90dp"
+				    android:layout_alignParentRight="true"
+				    android:layout_alignParentBottom="true"
+				    android:layout_marginTop="9dp"
+				    android:layout_marginRight="20dp"
+		    		android:text="@string/menu_add_order"
+		    		android:textSize="9dip"
+		    		android:id="@+id/menu_add_order"	
+			    	/>
+		    </RelativeLayout>
+	    </LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+		android:layout_height="fill_parent" 
+	    android:layout_width="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="3"
+		>
+		<!-- 菜谱介绍 -->
+		<TextView
+			android:layout_marginLeft="25dp"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+    		android:text="@string/menu_introduce"
+			/>
+		<LinearLayout
+			android:layout_height="fill_parent" 
+		    android:layout_width="fill_parent"
+		    android:orientation="vertical"
+		    android:layout_marginLeft="25dp" 
+			android:layout_marginTop="10dp"
+		    android:layout_weight="1"
+			>	
+			<!-- TextView垂直滚动显示 -->
+			<ScrollView
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent" 
+				android:scrollbars="vertical"
+				android:fadingEdge="vertical"
+				>
+				<!-- 菜谱介绍详情 -->
+				<TextView 
+					android:layout_height="wrap_content" 
+					android:layout_width="fill_parent" 
+					android:id="@+id/textView1" 
+					android:text="@string/menu_details" 
+					android:textSize="10dip"
+					/>
+			</ScrollView>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
